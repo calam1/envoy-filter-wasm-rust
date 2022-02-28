@@ -22,3 +22,11 @@ https://containerjournal.com/features/extending-the-envoy-proxy-with-webassembly
 
 https://martin.baillie.id/wrote/envoy-wasm-filters-in-rust/
 
+# run it
+
+everything deploys but filter no longer is working, not sure of what the problem is
+
+wasme deploy envoy hello_world:v0.5 --envoy-image=envoyproxy/envoy:v1.17-latest --bootstrap=envoy-demo-117-working.yaml      
+
+http://localhost:10000/headers
+
